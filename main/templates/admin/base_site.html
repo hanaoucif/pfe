@@ -1,0 +1,12 @@
+{% extends "admin/base.html" %}
+
+{% block li %}{% if subtitle %}{{ subtitle }} | {% endif %}{{li}} | {{ site_title|default:_('Gestion de Projet') }}{% endblock %}
+
+{% block branding %}
+<div id="site-name"><a href="{% url 'acceuil' %}"></a>Gestion de Projet </div>
+{% if user.is_anonymous %}
+  {% include "admin/color_theme_toggle.html" %}
+{% endif %}
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

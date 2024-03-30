@@ -1,0 +1,80 @@
+*{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.big-log{
+  display: flex;
+  justify-content: space-between;
+
+
+}
+.design-form{
+  background-color: blue;
+  padding: 350px;
+padding-left: 150px !important;
+  border-radius:0 100%  500px 0;
+}
+.design-form h3{
+  color: white;
+  font-size: larger;
+  
+}
+.login-form {
+margin-top:180px ;
+margin-right: 804px;
+margin-left: 150px;
+
+    padding: 2rem;
+    background-color: rgb(220, 220, 220);
+    box-shadow: 0px 0px 3px gray;
+    border-radius: 4px;
+    width: 27rem;
+    justify-content: center;
+    align-items: center;
+
+}
+.login-form  h2 {
+    margin-left: 40%;
+    margin-bottom: 2rem;
+
+}
+.login-form label {
+   margin-bottom: 0.5rem;
+    color: gray;
+}
+
+.login-form input{
+    width: 90%;
+    padding: 0.6rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.login-form button{
+  margin-top: 50px;
+    padding: 0.7rem;
+    width: 50%;
+    background-color: rgba(218, 165, 32, 0.925);
+    border: 1px solid white;
+    border-radius: 7px ;
+    color: white;
+    margin-left: 22%;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+
+}
+.login-form button:hover {
+    background-color: rgb(255, 183, 0);
+}
+.login-form a{
+    margin-left: 30%;
+ }
+
+ .error-message {
+    color: red ;
+    margin-left: 22%;
+    margin-bottom: 0.5rem;
+ }

@@ -1,0 +1,41 @@
+
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
+<div class="background-container"></div>
+
+
+<div class='big-log'>
+  <div class='design-form'>
+    <img style=" border-radius:100%;position:relative;left:10px;bottom:250px;" width='90px;'  src=" {% static 'photos/logo.png' %} " alt="Logo">
+  <h3 style='position:relative;bottom:180px;'>soyez les bienvenus 
+  pour accéder à vos données énergétiques<br><br> et gérer vos comptes en toute simplicité
+</h3>
+<img style=" border-radius:100%;position:relative;left:10px;top:-180px;" width='320px;'  src=" {% static 'photos/login.png' %} " alt="Logo">
+
+  </div>
+
+
+  <div class='lg-form'>
+
+    <form method="post" action="{% url 'login' %}" class="login-form">
+        {% csrf_token %}
+        <h2>Login</h2>
+        <label for="username1">Username</label>
+        {{form.username}}
+        <label for="login-password1">Password</label>
+        {{form.password}}
+        {% if error_message %}
+        <p class="error-message">{{error_message}}</p>
+        {% endif %}
+        <button type="submit">Login</button>
+    </form>
+  </div>
+
+
+
+
+
+
+{% endblock %}

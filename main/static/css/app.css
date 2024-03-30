@@ -1,0 +1,66 @@
+.demi{
+  background-color:rgb(74, 137, 209);
+  padding: 8px;
+
+
+}
+.document,.projet{
+  background-color:rgb(74, 137, 209);
+  width: fit-content;
+  margin-top: 40px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px 20px 3px 70px;
+}
+#pr h4{
+  color: white;
+}
+#pr h4:hover{
+  color: black;
+}
+.comission ,.incident,.parties{
+  margin-top: 30px;
+  background-color: orange;
+  width: fit-content;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px 20px 3px 70px;
+}
+.comission:hover{
+  background-color: rgb(193, 175, 154);
+}.document:hover{
+  background-color: rgb(193, 175, 154);
+}
+.parties:hover{
+  background-color: rgb(193, 175, 154);
+}
+.projet:hover{
+  background-color: rgb(193, 175, 154);
+}
+.incident:hover{
+  background-color: rgb(193, 175, 154);
+}
+
+
+.big-one{
+  display: grid;
+  grid-template-rows: 1fr 1fr   ;
+  grid-template-columns: 1fr 1fr 1fr 1fr  ;
+  margin: 30px;
+  grid-area: 40px;
+  
+}
+.incident img{
+  border-radius: 540px;
+  margin-left: 70px;
+}
+.document img{
+  margin-left: 50px;
+}
+.big-one h4{
+  font-family:cursive;
+  font-size: 20px;
+  display:inline;
+  justify-content: center;
+  align-items: center;
+}

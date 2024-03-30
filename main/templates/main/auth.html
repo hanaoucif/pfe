@@ -1,0 +1,42 @@
+{%  extends "main/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hana page </title>
+</head>
+<body>
+
+  {% block content %}
+  {% load static %}
+  <div class="background-container"></div>
+  
+  <div style='height:30px;' class='demi'> 
+
+    <a style='text-decoration: none;color:white;'  href="{% url 'acceuil' %}">  <h4>Acceuil  </a>  / <span style='color:orange;font-size:20px'>Authentification et autorisation</span></h4>
+  <section id='principe'>
+
+
+    <a  style='text-decoration: none;color:white;' href="{% url 'admin:auth_group_changelist' %}">
+      
+    <div class='auth'>
+      <img style='border-radius:230px;'  width='200px;'  src=" {% static 'photos/groupes.png' %} " >
+      <h3 style='margin-left:50px;color:white;'> Groupes </h3>
+    </div>
+  </a>
+    <a  style='text-decoration: none;color:white;'  href="{% url 'admin:auth_user_changelist' %}">
+      <div class='app'>
+        <img width='200px;'  src=" {% static 'photos/user.png' %} ">
+        <br><br>
+        <h3 style='margin-left:50px;color:white;'>Utilisateur</h3>
+  
+      </div>
+  </a>
+  </section>
+  
+  {% endblock %}
+
+    
+</body>
+</html>
